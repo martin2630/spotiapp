@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpService } from './services/http.service';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -25,6 +26,7 @@ import { HttpService } from './services/http.service';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [HttpService],
