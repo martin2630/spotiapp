@@ -13,6 +13,9 @@ import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpService } from './services/http.service';
 import {FormsModule} from '@angular/forms';
+import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { ArtistComponent } from './components/artist/artist.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 
@@ -21,7 +24,10 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    SinfotoPipe,
+    ArtistComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

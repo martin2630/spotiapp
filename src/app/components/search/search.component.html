@@ -18,11 +18,15 @@
     </div>
 
     <div class="col-sm-9">
-      <ul>
-        <li *ngFor="let artist of artists">
-          {{ artist.name }}
-        </li>
-      </ul>
+        <div class="row">
+          <div class="col-sm-3 text-center" *ngFor="let artist of artists">
+            <img [src]="artist.images | sinfoto" alt="" class="img-thumbnail img-fluid">
+            <p>
+              <a [routerLink]="['/artist', artist.id]">{{ artist.name }}</a>
+            </p>
+            <hr>
+          </div>
+        </div>
     </div>
   </div>
 </div>
